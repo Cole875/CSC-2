@@ -36,7 +36,7 @@ public class Moral {
             }
 
 
-
+            //Count found individuals
             for(int g = 0; g < b.length(); g++)
                 for(int q = 0; q < totals.size(); q++){
                     if(compare.get(q) == totals.get(q)){
@@ -102,7 +102,7 @@ public class Moral {
                     Character cperson = groupc[i];
                     if(bperson == (citizen.get(j))){
                         totalb +=  j+1;
-
+                        //calculate the value of the group
                     }
                     if(cperson == citizen.get(j)){
                         totalc +=  j+1;
@@ -110,7 +110,7 @@ public class Moral {
 
 
                 }
-
+                //Determine which group is better and save them
                 if(totalb> totalc){
                     choice = true;
 
